@@ -5,7 +5,7 @@ import SceneCard from "./SceneCard";
 
 export default function SceneGallery() {
   return (
-    <section id="gallery" className="scroll-mt-28 py-20">
+    <section id="gallery" className="scroll-mt-28 py-20 border-b border-line">
       <div className="mb-8 flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
         <div>
           <h2 className="mt-3 font-display text-3xl font-medium tracking-tight sm:text-4xl">
@@ -26,12 +26,6 @@ export default function SceneGallery() {
           <SceneCard key={scene.id} scene={scene} />
         ))}
       </div>
-
-      <p className="mt-6 border-l-2 border-amber/60 pl-3 text-xs leading-6 text-muted">
-        Replace the thumbnail paths and viewer URLs in{" "}
-        <code className="text-mint">src/data/scenes.js</code> when your
-        rendered previews and Splattr links are ready.
-      </p>
     </section>
   );
 }

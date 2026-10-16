@@ -3,25 +3,22 @@ import { ArrowUpRight, Box } from "lucide-react";
 
 export default function SceneCard({ scene }) {
   return (
-    <article className="group min-w-0 border border-line bg-panel transition duration-200 hover:-translate-y-1 hover:border-mint/60">
-      <div className="relative h-44 overflow-hidden bg-[#202b2e] sm:h-48">
+    <article className="group min-w-0 border border-line bg-panel transition duration-200 hover:-translate-y-1 hover:border-mint/60 p-2">
+
+      
+
+
+      <div className="relative overflow-hidden h-60">
         <img
           src={scene.image}
           alt={`${scene.name} scene thumbnail`}
-          className="absolute inset-0 z-100 h-full w-full object-cover"
+          className="absolute h-full w-full object-fill p-8"
           onError={(e) => {
             e.currentTarget.style.display = "none";
           }}
         />
 
         
-
-        <span className="absolute left-3 top-3 grid h-8 w-8 place-items-center border border-white/20 bg-ink/90 font-mono text-[10px] text-mint">
-          {scene.id}
-        </span>
-        <span className="absolute right-3 top-3 max-w-[75%] bg-ink/90 px-2 py-1 font-mono text-[8px] tracking-wide text-slate-300">
-          {scene.category}
-        </span>
       </div>
 
       <div className="flex items-center justify-between gap-3 p-4">
@@ -50,9 +47,9 @@ export default function SceneCard({ scene }) {
       </div>
 
       <div className="flex justify-between gap-2 border-t border-line px-4 py-3 font-mono text-[8px] tracking-wide text-muted">
-        <span>3DGS / MIPNERF360</span>
-        <span className={scene.viewerUrl ? "text-mint" : "text-amber"}>
-          {scene.viewerUrl ? "VIEW SCENE" : "LINK PENDING"}
+        <span>{scene.type}</span>
+        <span>
+          {scene.category}
         </span>
       </div>
     </article>

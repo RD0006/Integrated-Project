@@ -40,15 +40,12 @@ const steps = [
 
 export default function Pipeline() {
   return (
-    <section id="pipeline" className="scroll-mt-28 border-y border-line bg-panel/50 py-16 sm:py-20">
+    <section id="pipeline" className="scroll-mt-10 border-b border-line bg-panel/50 py-16 sm:py-20">
       <div className="mb-8">
-        <span className="font-mono text-[10px] tracking-widest text-mint">
-          03 / SYSTEM WORKFLOW
-        </span>
-        <h2 className="mt-3 font-display text-3xl font-medium tracking-tight sm:text-4xl">
+        <h2 className="mt-3 font-display text-xl font-medium tracking-tight sm:text-2xl">
           Reconstruction pipeline
         </h2>
-        <p className="mt-3 max-w-2xl text-sm leading-7 text-slate-400">
+        <p className="mt-3 text-sm leading-7">
           From raw multi-view images to a navigable 3D scene, each stage
           contributes to the final Gaussian representation.
         </p>
@@ -74,12 +71,6 @@ export default function Pipeline() {
             )}
           </div>
         ))}
-      </div>
-
-      <div className="mt-5 flex flex-wrap gap-x-6 gap-y-2 font-mono text-[9px] tracking-wide text-muted">
-        <span>INPUT / IMAGES + CAMERA DATA</span>
-        <span>PROCESS / GPU TRAINING</span>
-        <span>OUTPUT / GAUSSIAN PLY</span>
       </div>
     </section>
   );

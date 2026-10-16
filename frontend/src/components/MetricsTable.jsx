@@ -15,9 +15,6 @@ export default function MetricsTable() {
     <section id="metrics" className="scroll-mt-28 py-20">
       <div className="mb-8 flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
         <div>
-          <span className="font-mono text-[10px] tracking-widest text-mint">
-            04 / MODEL EVALUATION
-          </span>
           <h2 className="mt-3 font-display text-3xl font-medium tracking-tight sm:text-4xl">
             Performance matrix
           </h2>

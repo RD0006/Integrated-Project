@@ -3,7 +3,7 @@ import { ArrowDownRight, ChartNoAxesCombined } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section id="home" className="grid gap-10 py-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
+    <section id="home" className="grid gap-10 pt-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
       <div>
 
         <h1 className="max-w-5xl font-display text-5xl font-semibold leading-[1.08] tracking-tight sm:text-5xl lg:text-5xl xl:text-5xl">
@@ -17,7 +17,7 @@ export default function Hero() {
         <div className="mt-8 flex flex-wrap gap-3">
           <a
             href="#gallery"
-            className="inline-flex items-center gap-5 bg-mint px-5 py-3 text-sm font-semibold text-ink transition hover:bg-[#c0dfd2]"
+            className="inline-flex items-center gap-5 bg-mint px-5 py-3 text-sm font-semibold text-ink transition"
           >
             Explore scenes <ArrowDownRight size={17} />
           </a>

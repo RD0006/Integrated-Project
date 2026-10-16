@@ -13,8 +13,8 @@ export default function App() {
 
       <main className="mx-auto max-w-[1440px] px-5 md:px-10">
         <Hero />
-        <SceneGallery />
         <Pipeline />
+        <SceneGallery />
         <MetricsTable />
       </main>
 
