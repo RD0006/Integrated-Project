@@ -23,9 +23,6 @@ export default function MetricsTable() {
           </p>
         </div>
 
-        <span className="flex items-center gap-2 self-start border border-line px-3 py-2 font-mono text-[10px] text-mint sm:self-auto">
-          <Activity size={14} /> EVALUATION DATA
-        </span>
       </div>
 
       <div className="overflow-x-auto border border-line">
@@ -70,18 +67,11 @@ export default function MetricsTable() {
         </table>
       </div>
 
-      <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2 font-mono text-[9px] text-muted">
-        <span>PSNR / PEAK SIGNAL-TO-NOISE RATIO</span>
-        <span>SSIM / STRUCTURAL SIMILARITY</span>
-        <span>LPIPS / PERCEPTUAL DISTANCE</span>
+      <div className="mt-5 flex flex-wrap gap-y-2 align-center justify-between text-[12px]">
+        <span>PSNR | Peak Signal-to-Noise Ratio</span>
+        <span>SSIM | Structural Similarity</span>
+        <span>LPIPS | Perceptual Distance</span>
       </div>
-
-      <p className="mt-4 text-xs leading-6 text-slate-500">
-        Higher PSNR and SSIM generally indicate better similarity; lower LPIPS
-        indicates greater perceptual similarity. Compare metrics using
-        consistent test splits and evaluation settings. Blank values mean
-        results have not yet been recorded.
-      </p>
     </section>
   );
 }

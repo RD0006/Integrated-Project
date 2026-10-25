@@ -3,7 +3,7 @@ import { ArrowUp, Box } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-line pt-8">
+    <footer className="border-t border-line pt-8 pb-10">
       <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-center">
         <a href="#home" className="flex items-center gap-3">
           <span className="grid h-9 w-9 place-items-center border border-mint/40 bg-mint/10 text-mint">
@@ -19,7 +19,7 @@ export default function Footer() {
           </span>
         </a>
 
-        <p className="max-w-md text-xs leading-6 text-slate-400">
+        <p className="max-w-md text-xs leading-6 text-slate-400 text-center">
           An academic exploration of 3D Gaussian Splatting, scene
           reconstruction, and visual computing.
         </p>
@@ -30,12 +30,6 @@ export default function Footer() {
         >
           BACK TO TOP <ArrowUp size={14} />
         </a>
-      </div>
-
-      <div className="mt-8 flex flex-col gap-3 border-t border-line py-5 font-mono text-[9px] tracking-wide text-muted sm:flex-row sm:justify-between">
-        <span>PROJECT / 3D SCENE RECONSTRUCTION</span>
-        <span>DATASET / MIP-NE RF 360</span>
-        <span>BUILT FOR EXPERIMENTATION.</span>
       </div>
     </footer>
   );

@@ -3,7 +3,7 @@ import { ArrowUpRight, Box } from "lucide-react";
 
 export default function SceneCard({ scene }) {
   return (
-    <article className="group min-w-0 border border-line bg-panel transition duration-200 hover:-translate-y-1 hover:border-mint/60 p-2">
+    <article className="group min-w-0 border rounded-4xl border-line bg-panel transition duration-200 hover:-translate-y-1 hover:border-mint/60">
 
       
 
@@ -12,7 +12,7 @@ export default function SceneCard({ scene }) {
         <img
           src={scene.image}
           alt={`${scene.name} scene thumbnail`}
-          className="absolute h-full w-full object-fill p-8"
+          className="absolute h-full rounded-t-4xl object-cover"
           onError={(e) => {
             e.currentTarget.style.display = "none";
           }}
@@ -21,14 +21,16 @@ export default function SceneCard({ scene }) {
         
       </div>
 
-      <div className="flex items-center justify-between gap-3 p-4">
+      <div className="flex items-center border-t border-line justify-between gap-5 p-4 pb-6">
         <div className="min-w-0">
           <h3 className="font-display text-lg font-medium">{scene.name}</h3>
-          <p className="mt-1 text-[11px] text-muted">Gaussian scene reconstruction</p>
+          <div className="mt-1 text-[11px] text-muted tracking-wide">
+            {scene.type} | {scene.category}
+          </div>
+          
         </div>
 
-        {scene.viewerUrl ? (
-          <a
+        <a
             href={scene.viewerUrl}
             target="_blank"
             rel="noreferrer"
@@ -37,20 +39,7 @@ export default function SceneCard({ scene }) {
           >
             <ArrowUpRight size={18} />
           </a>
-        ) : (
-          <span
-            className="grid h-9 w-9 shrink-0 cursor-pointer place-items-center border border-line text-muted/50"
-          >
-            <ArrowUpRight size={18} />
-          </span>
-        )}
-      </div>
 
-      <div className="flex justify-between gap-2 border-t border-line px-4 py-3 font-mono text-[8px] tracking-wide text-muted">
-        <span>{scene.type}</span>
-        <span>
-          {scene.category}
-        </span>
       </div>
     </article>
   );

@@ -2,7 +2,6 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import SceneGallery from "./components/SceneGallery";
-import Pipeline from "./components/Pipeline";
 import MetricsTable from "./components/MetricsTable";
 import Footer from "./components/Footer";
 
@@ -13,7 +12,7 @@ export default function App() {
 
       <main className="mx-auto max-w-[1440px] px-5 md:px-10">
         <Hero />
-        <Pipeline />
+        {/*<Pipeline />*/}
         <SceneGallery />
         <MetricsTable />
       </main>

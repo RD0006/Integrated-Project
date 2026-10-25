@@ -22,7 +22,6 @@ export default function Navbar() {
         <nav className="flex items-center gap-4 text-xs text-slate-300 sm:gap-7 sm:text-sm">
             
           <a className="transition hover:text-mint" href="#gallery">Scenes</a>
-          <a className="transition hover:text-mint" href="#pipeline">Pipeline</a>
           <a className="transition hover:text-mint" href="#metrics">Metrics</a>
         </nav>
 
