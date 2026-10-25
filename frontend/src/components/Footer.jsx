@@ -11,18 +11,13 @@ export default function Footer() {
           </span>
           <span>
             <strong className="block font-display text-sm tracking-[0.15em]">
-              SPLATLAB
+              SplatLab
             </strong>
             <small className="font-mono text-[9px] text-muted">
               3D RECONSTRUCTION LAB
             </small>
           </span>
         </a>
-
-        <p className="max-w-md text-xs leading-6 text-slate-400 text-center">
-          An academic exploration of 3D Gaussian Splatting, scene
-          reconstruction, and visual computing.
-        </p>
 
         <a
           href="#home"

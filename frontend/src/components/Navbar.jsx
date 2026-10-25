@@ -11,7 +11,7 @@ export default function Navbar() {
           </span>
           <span>
             <strong className="block font-display text-base tracking-[0.16em]">
-              SPLATLAB
+              SplatLab
             </strong>
             <small className="block font-mono text-[9px] tracking-wider text-muted">
               3D RECONSTRUCTION LAB
@@ -24,11 +24,6 @@ export default function Navbar() {
           <a className="transition hover:text-mint" href="#gallery">Scenes</a>
           <a className="transition hover:text-mint" href="#metrics">Metrics</a>
         </nav>
-
-        <div className="hidden items-center gap-2 font-mono text-[12px] tracking-wider text-mint lg:flex">
-          <span className="h-2 w-2 rounded-full bg-mint" />
-            Explore the Code
-        </div>
       </div>
     </header>
   );

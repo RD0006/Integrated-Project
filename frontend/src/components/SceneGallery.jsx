@@ -15,10 +15,6 @@ export default function SceneGallery() {
             Browse the dataset and open available interactive viewers.
           </p>
         </div>
-
-        <span className="flex items-center gap-2 self-start border border-line px-3 py-2 font-mono text-[10px] text-amber sm:self-auto">
-          <Grid3X3 size={14} /> SCENES / 09
-        </span>
       </div>
 
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5">

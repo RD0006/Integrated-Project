@@ -14,10 +14,10 @@ export default function Hero() {
           Explore our photorealistic 3D scene reconstruction done using 3D Gaussian Splatting. This objectives of this project are to transform calibrated multi-view images into navigable scene representations whilst maintaining reconstruction quality, and fast novel-view rendering.
         </p>
 
-        <div className="mt-8 flex flex-wrap gap-3">
+        <div className="mt-8 flex flex-wrap gap-6">
           <a
             href="#gallery"
-            className="inline-flex items-center gap-5 bg-mint px-5 py-3 text-sm font-semibold text-ink transition"
+            className="inline-flex items-center gap-3 bg-mint px-5 py-3 text-sm font-semibold text-ink transition"
           >
             Explore scenes <ArrowDownRight size={17} />
           </a>
@@ -30,7 +30,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="relative overflow-hidden border border-line bg-panel p-7 sm:p-10">
+      <div className="relative overflow-hidden border border-line bg-panel p-7 sm:p-10 rounded-4xl">
         <div className="absolute right-0 top-0 h-20 w-20 border-r border-t border-mint/40" />
 
         <div className="p-2">
