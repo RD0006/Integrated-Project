@@ -4,10 +4,9 @@ import { scenes } from "../data/scenes";
 
 const columns = [
   { key: "iterations", label: "ITERATIONS" },
-  { key: "resolution", label: "RESOLUTION" },
-  { key: "psnr", label: "PSNR ↑" },
-  { key: "ssim", label: "SSIM ↑" },
-  { key: "lpips", label: "LPIPS ↓" },
+  { key: "psnr", label: "PSNR" },
+  { key: "ssim", label: "SSIM" },
+  { key: "lpips", label: "LPIPS" },
 ];
 
 export default function MetricsTable() {
